@@ -688,7 +688,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 `let numbers = [1, 2, 3, 4]; numbers.splice(1, 2, "a", "b"); // Start at index 1, remove 2, add "a", "b" console.log(numbers); // [1, "a", "b", 4]`
 
@@ -707,7 +707,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 `let rand = Math.random(); console.log(rand); // e.g., 0.7234519... // Random integer between 1 and 10 let dice = Math.floor(Math.random() * 10) + 1; console.log(dice); // e.g., 7`
 
@@ -720,7 +720,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 `setTimeout(() => console.log("Delayed!"), 2000); // Logs after 2 seconds let count = 0; let interval = setInterval(() => { console.log("Tick", count++); if (count === 3) clearInterval(interval); // Stops after 3 ticks }, 1000);`
 
@@ -733,7 +733,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 `let nested = [1, [2, 3], [4, [5, 6]]]; console.log(nested.flat()); // [1, 2, 3, 4, [5, 6]] console.log(nested.flat(2)); // [1, 2, 3, 4, 5, 6]`
 
@@ -746,7 +746,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 `let obj = { name: "Alice", info: { age: 25 } }; Object.freeze(obj); obj.name = "Bob"; // Fails silently (or throws in strict mode) obj.info.age = 26; // Works! console.log(obj); // { name: "Alice", info: { age: 26 } }`
 
@@ -759,7 +759,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 `let text = "The year is 2025, not 1999!"; let years = text.match(/\d{4}/g); // Find all 4-digit numbers console.log(years); // ["2025", "1999"]`
 
@@ -772,7 +772,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 `let price = 1234567.89; console.log(price.toLocaleString("en-US")); // "1,234,567.89" console.log(price.toLocaleString("de-DE")); // "1.234.567,89" console.log(price.toLocaleString("en-US", { style: "currency", currency: "USD" })); // "$1,234,567.89"`
 
@@ -803,7 +803,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 ``function formatOrderSummary(items, date) { let orderDate = new Date(date); let itemList = items.split(","); // Split string into array let updatedList = itemList.splice(1, 1, "Book"); // Replace 2nd item let hasBook = updatedList.includes("Book"); // Check presence let summary = `Order on ${orderDate.toLocaleString("en-US", { dateStyle: "medium" })}: ${ updatedList.join(" & ") }`; console.log(summary); // e.g., "Order on Mar 31, 2025: apple & Book & orange" console.log("Includes Book?", hasBook); // "Includes Book?" true setTimeout(() => console.log("Order processed!"), 1000); // Delay } formatOrderSummary("apple,banana,orange", "2025-03-31");``
 
