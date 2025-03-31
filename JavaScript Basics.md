@@ -817,10 +817,6 @@ CollapseWrapCopy
 
 ---
 
-## Interactive Tips for Obsidian
 
-- **Collapse Sections**: Use [!NOTE] to toggle details.
-- **Experiment**: Run these in the console—try different inputs (e.g., change locales in toLocaleString).
-- **Link Notes**: Connect to [[String]] or [[Array]] for deeper dives.
 
 ---
