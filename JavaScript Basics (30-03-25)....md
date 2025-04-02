@@ -37,8 +37,6 @@ CollapseWrapCopy
 
 javascript
 
-
-
 `let age = 25; console.log(age); // 25 // let age = 30; // Error: Cannot re-declare 'age' in the same scope age = 30; // Re-assignment is fine console.log(age); // 30 if (true) { let score = 100; console.log(score); // 100 } console.log(score); // Error: 'score' is not defined (block scope)`
 
 - **Why Use?**: Preferred for variables that need to change value, with safer block scoping.
@@ -152,7 +150,7 @@ These are immutable, basic building blocks.
     
     javascript
     
-    CollapseWrapCopy
+
     
     `let big = 10n; console.log(big * 2n); // 20n`
     
@@ -168,7 +166,6 @@ These are mutable and stored by reference.
     
     javascript
     
-    CollapseWrapCopy
     
     `let car = { make: "Toyota", model: "Camry" }; car.model = "Corolla"; // Mutable console.log(car); // { make: "Toyota", model: "Corolla" }`
     
@@ -190,7 +187,6 @@ These are mutable and stored by reference.
     
     javascript
     
-    CollapseWrapCopy
     
     `function add(a, b) { return a + b; } console.log(add(2, 3)); // 5`
     
@@ -345,7 +341,7 @@ JavaScript automatically converts types (implicit coercion) or allows manual con
 
 javascript
 
-CollapseWrapCopy
+
 
 `let num = 5; let str = "The number is " + num; console.log(str); // "The number is 5"`
 
@@ -353,9 +349,9 @@ CollapseWrapCopy
 
 - Occurs with arithmetic operators (except + with strings) or comparisons.
 
-javascript
+javascript.
 
-CollapseWrapCopy
+
 
 `let strNum = "10"; console.log(strNum - 0); // 10 (string to number) console.log("5" * 2); // 10 console.log("3" > 2); // true`
 
@@ -367,7 +363,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 `console.log(!!0); // false console.log(!!"hello"); // true if ("0") { console.log("Truthy!"); } // Logs "Truthy!"`
 
@@ -384,7 +380,7 @@ CollapseWrapCopy
 
 javascript
 
-CollapseWrapCopy
+
 
 `let num = 42; console.log(String(num)); // "42" console.log(num.toString()); // "42"`
 
