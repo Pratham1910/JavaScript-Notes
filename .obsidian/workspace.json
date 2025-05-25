@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1bc3c59bb7dde419",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "React                                          31-03-2025.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "React                                          31-03-2025"
-            }
-          },
-          {
             "id": "dfc40af6682ac1ce",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Projects                                      04-02-25.md",
+                "file": "JavaScript Basics (30-03-25)....md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Projects                                      04-02-25"
+              "title": "JavaScript Basics (30-03-25)..."
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -68,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Counter",
+                "query": " ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,8 +74,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -110,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Mastering DevTools..md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for Mastering DevTools."
             }
           },
           {
@@ -129,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Mastering DevTools..md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from Mastering DevTools."
             }
           },
           {
@@ -158,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Mastering DevTools..md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of Mastering DevTools."
             }
           },
           {
@@ -198,14 +182,15 @@
   },
   "active": "dfc40af6682ac1ce",
   "lastOpenFiles": [
-    "React                                          31-03-2025.md",
-    "Projects                                      04-02-25.md",
-    "JavaScript Basics (30-03-25)....md",
-    "Pasted image 20250331224051.png",
-    "JavaScript Moderate.md",
     "ChatGPT Image Mar 31, 2025, 10_35_19 PM.png",
     "Excalidraw/variable.md",
+    "React                                          31-03-2025.md",
+    "JavaScript Basics (30-03-25)....md",
+    "Pasted image 20250331224051.png",
+    "Mastering DevTools..md",
+    "JavaScript Moderate.md",
     "README.md",
+    "Projects                                      04-02-25.md",
     "Excalidraw/Drawing 2025-03-31 20.10.08.excalidraw.md",
     "Excalidraw/Drawing 2025-03-31 19.29.38.excalidraw.md",
     "Untitled.canvas",
