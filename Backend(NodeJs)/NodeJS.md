@@ -356,4 +356,140 @@ Deleting the same resource twice has the same result (it’s gone).
     
 - Proper use of these methods makes your API **clean, predictable, and RESTful**.
 
+# 🌐 REST API Methods with Examples
+
+Below are examples of the **four main REST API methods** — `GET`, `POST`, `PATCH`, and `DELETE`.  
+We’ll use a sample resource called **/users** to demonstrate each operation.
+
+---
+
+## 🟢 1. GET – Retrieve Data
+
+**Purpose:** Fetch data from the server.  
+**Example Request:**
+```http
+GET /api/users
+```
+
+
+**Response:**
+
+`[   { "id": 1, "name": "Alice", "email": "alice@mail.com" },   { "id": 2, "name": "Bob", "email": "bob@mail.com" } ]`
+
+➡️ **Notes:**
+
+- Does **not** modify any data.
+    
+- Can be used with query parameters like:
+    
+    `GET /api/users?name=Alice`
+    
+
+---
+
+## 🟠 2. POST – Create Data
+
+**Purpose:** Add a new resource to the server.  
+**Example Request:**
+
+`POST /api/users Content-Type: application/json`
+
+**Request Body:**
+
+`{ "name": "Charlie", "email": "charlie@mail.com" }`
+
+**Response:**
+
+`{ "id": 3, "name": "Charlie", "email": "charlie@mail.com" }`
+
+➡️ **Notes:**
+
+- Used to **create** a new user.
+    
+- Each request usually creates a **new entry**.
+    
+- **Not idempotent** (multiple calls create duplicates).
+    
+
+---
+
+## 🟡 3. PATCH – Update Part of a Resource
+
+**Purpose:** Modify only specific fields of a resource.  
+**Example Request:**
+
+`PATCH /api/users/3 Content-Type: application/json`
+
+**Request Body:**
+
+`{ "email": "charlie.new@mail.com" }`
+
+**Response:**
+
+`{ "id": 3, "name": "Charlie", "email": "charlie.new@mail.com" }`
+
+➡️ **Notes:**
+
+- Updates **only** the provided fields.
+    
+- Common for profile edits or small changes.
+    
+- Safer than `PUT` when you don’t want to overwrite all data.
+    
+
+---
+
+## 🔴 4. DELETE – Remove a Resource
+
+**Purpose:** Delete a resource from the server.  
+**Example Request:**
+
+`DELETE /api/users/3`
+
+**Response:**
+
+`{ "message": "User with ID 3 deleted successfully." }`
+
+➡️ **Notes:**
+
+- Deletes the resource permanently (unless soft-delete is implemented).
+    
+- **Idempotent** (deleting again returns same result — resource already gone).
+    
+
+---
+
+## 🧩 Quick Summary Table
+
+|Method|Action|Example Endpoint|Description|
+|---|---|---|---|
+|**GET**|Read|`/api/users`|Retrieve user data|
+|**POST**|Create|`/api/users`|Add a new user|
+|**PATCH**|Update (partial)|`/api/users/3`|Modify existing user|
+|**DELETE**|Delete|`/api/users/3`|Remove user|
+
+---
+
+## 💻 JavaScript Fetch Example (Optional)
+
+You can use these methods in frontend or backend code.  
+Example using the **Fetch API** in JavaScript:
+
+`// Example: GET request fetch("https://api.example.com/users")   .then(res => res.json())   .then(data => console.log(data));  // Example: POST request fetch("https://api.example.com/users", {   method: "POST",   headers: { "Content-Type": "application/json" },   body: JSON.stringify({ name: "Charlie", email: "charlie@mail.com" }) });  // Example: PATCH request fetch("https://api.example.com/users/3", {   method: "PATCH",   headers: { "Content-Type": "application/json" },   body: JSON.stringify({ email: "new@mail.com" }) });  // Example: DELETE request fetch("https://api.example.com/users/3", { method: "DELETE" });`
+
+---
+
+## ✅ In Summary
+
+- `GET` → Read data
+    
+- `POST` → Create new data
+    
+- `PATCH` → Update existing data
+    
+- `DELETE` → Remove data
+    
+
+REST APIs make it easy to perform CRUD operations through simple, predictable HTTP methods.
+
 
