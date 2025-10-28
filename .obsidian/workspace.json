@@ -74,9 +74,23 @@
               "icon": "lucide-file",
               "title": "NodeJS"
             }
+          },
+          {
+            "id": "db3fd4d60b42af9a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Backend(NodeJs)/NodeJS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "NodeJS"
+            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -236,7 +250,7 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "5f4c25010cf47c8d",
+  "active": "db3fd4d60b42af9a",
   "lastOpenFiles": [
     "JavaScript Basics (30-03-25)....md",
     "Backend(NodeJs)/NodeJS.md",
