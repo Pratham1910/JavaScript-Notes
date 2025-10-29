@@ -1,4 +1,6 @@
 
+Node.js is a free, open-source, and cross-platform JavaScript runtime environment that allows developers to execute JavaScript code outside of a web browser. It is built on Google Chrome's V8 JavaScript engine, which makes it highly performant.
+
 # 🖥️ Creating Server using HTTP
 
 ```js
@@ -580,3 +582,4 @@ app.listen(3000, () => {
 
 });
 ```
+
