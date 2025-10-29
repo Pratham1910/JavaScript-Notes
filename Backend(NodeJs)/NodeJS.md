@@ -492,4 +492,91 @@ Example using the **Fetch API** in JavaScript:
 
 REST APIs make it easy to perform CRUD operations through simple, predictable HTTP methods.
 
+# Examples
 
+```js
+const express = require("express");
+
+  
+
+const app = express();
+
+  
+
+app.use(express.json());
+
+  
+
+let notes = [];
+
+  
+
+app.post("/notes", (req, res) => {
+
+  notes.push(req.body);
+
+  console.log(notes);
+
+  res.json({
+
+    message: "Notes added Sucessfully!",
+
+    notes: notes,
+
+  });
+
+});
+
+  
+
+app.get("/notes", (re, res) => {
+
+  res.send("Notes Api !");
+
+});
+
+  
+
+app.delete("/notes/:index", (req, res) => {
+
+  const index = req.params.index;
+
+  delete notes[index];
+
+  res.json({
+
+    message: "Note is Deleted Sucessfully !",
+
+  });
+
+});
+
+  
+  
+
+app.patch('/notes/:index',(req,res)=>{
+
+    const index = req.params.index
+
+    const {title} = req.body
+
+    notes[index].title = title
+
+    res.json({
+
+        message: 'Notes Updated Sucessfully !',
+
+    })
+
+  
+
+})
+
+  
+
+app.listen(3000, () => {
+
+  console.log("Server running at port 3000..");
+
+});
+```
