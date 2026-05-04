@@ -101,7 +101,6 @@ export default User;
 `MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/myDatabase`
 
 3. **Connect in your server (e.g., `server.js`)**
-    
 
 ```js
 import express from "express"; 
@@ -116,7 +115,8 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.get("/", (req, res) => res.send("Server Running...")); 
 
-app.listen(3000, () => console.log("🚀 Server started on port 3000"));```
+app.listen(3000, () => console.log("🚀 Server started on port 3000"));
+```
 
 ---
 

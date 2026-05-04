@@ -81,24 +81,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "CSS/CSS.md",
+                "file": "CSS/CSS Animation's.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CSS"
-            }
-          },
-          {
-            "id": "6a51022b5efe7693",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.9.12"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.9.12"
+              "title": "CSS Animation's"
             }
           },
           {
@@ -107,12 +95,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "JavaScript Basics (30-03-25)....md",
+                "file": "Backend(NodeJs)/NodeJS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "JavaScript Basics (30-03-25)..."
+              "title": "NodeJS"
             }
           },
           {
@@ -144,7 +132,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -304,12 +292,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "9baa4e5953e4f877",
+  "active": "28ee4ea9a6dfa20d",
   "lastOpenFiles": [
+    "Backend(NodeJs)/MongoDB.md",
+    "CSS/CSS.md",
+    "HTML/SEO.md",
     "CSS/CSS Animation's.md",
     "Untitled 1.base",
     "Untitled.base",
-    "CSS/CSS.md",
     "HTML/HTML Basics.md",
     "CSS",
     "JavaScript/JavaScript Dom Manipulation.md",
@@ -325,7 +315,6 @@
     "JavaScript/JavaScript Moderate.md",
     "JavaScript/JavaScript Basics (30-03-25)....md",
     "JavaScript/ChatGPT Image Mar 31, 2025, 10_35_19 PM.png",
-    "Backend(NodeJs)/MongoDB.md",
     "JavaScript",
     "Backend(NodeJs)/NodeJS.md",
     "Backend(NodeJs)",
