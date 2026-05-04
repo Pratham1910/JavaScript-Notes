@@ -290,7 +290,6 @@ javascript
 
 javascript
 
-
 `let a = 5; // Binary: 0101 let b = 3; // Binary: 0011 console.log(a & b); // 1 (Binary: 0001) console.log(a | b); // 7 (Binary: 0111) console.log(a << 1); // 10 (Binary: 1010, shifts left)`
 
 - **Why Use?**: For low-level operations (e.g., flags, permissions).
