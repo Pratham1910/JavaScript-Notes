@@ -23,7 +23,19 @@ javascript
 
 CollapseWrapCopy
 
-`var name = "Alice"; console.log(name); // "Alice" var name = "Bob"; // Re-declaration is allowed console.log(name); // "Bob" name = "Charlie"; // Re-assignment is allowed console.log(name); // "Charlie" function example() { var x = 10; if (true) { var x = 20; // Overwrites the outer x console.log(x); // 20 } console.log(x); // 20 (not 10, due to function scope) } example();`
+```
+var name = "Alice"; 
+console.log(name); 
+// "Alice" var name = "Bob"; 
+// Re-declaration is allowed console.log(name); 
+// "Bob" name = "Charlie"; 
+// Re-assignment is allowed console.log(name); 
+// "Charlie" function example() { var x = 10; if (true) { var x = 20; 
+// Overwrites the outer x console.log(x); 
+// 20 } console.log(x); 
+// 20 (not 10, due to function scope) } example();`
+```
+
 
 - **Why Use?**: Rarely recommended today due to its quirks (hoisting, lack of block scope). Use it only in legacy code or when you explicitly need function-level scope.
 - **Why Not?**: Can lead to bugs due to hoisting and accidental re-declarations.
@@ -37,7 +49,17 @@ CollapseWrapCopy
 
 javascript
 
-`let age = 25; console.log(age); // 25 // let age = 30; // Error: Cannot re-declare 'age' in the same scope age = 30; // Re-assignment is fine console.log(age); // 30 if (true) { let score = 100; console.log(score); // 100 } console.log(score); // Error: 'score' is not defined (block scope)`
+
+```
+let age = 25; console.log(age); 
+// 25 
+// let age = 30; 
+// Error: Cannot re-declare 'age' in the same scope age = 30; 
+// Re-assignment is fine console.log(age); 
+// 30 if (true) { let score = 100; console.log(score); 
+// 100 } console.log(score); 
+// Error: 'score' is not defined (block scope)
+```
 
 - **Why Use?**: Preferred for variables that need to change value, with safer block scoping.
 - **Why Not?**: Don’t use if the value should never change (use const instead).
@@ -52,7 +74,18 @@ javascript
 javascript
 
 
-`const pi = 3.14; console.log(pi); // 3.14 // pi = 3.14159; // Error: Assignment to constant variable const person = { name: "Alice" }; person.name = "Bob"; // Allowed: Modifying object properties console.log(person.name); // "Bob" // person = { name: "Charlie" }; // Error: Cannot re-assign the object itself`
+```
+
+const pi = 3.14; 
+console.log(pi); 
+// 3.14 
+// pi = 3.14159; 
+// Error: Assignment to constant variable const person = { name: "Alice" }; person.name = "Bob"; 
+// Allowed: Modifying object properties console.log(person.name); 
+// "Bob" 
+// person = { name: "Charlie" }; 
+// Error: Cannot re-assign the object itself`
+```
 
 - **Why Use?**: Use for values that shouldn’t change (e.g., constants, configuration values) or when you want to signal intent.
 - **Why Not?**: Avoid if the variable needs to be re-assigned (use let instead).

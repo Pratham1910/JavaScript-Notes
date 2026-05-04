@@ -95,12 +95,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Backend(NodeJs)/NodeJS.md",
+                "file": "JavaScript/JavaScript Basics (30-03-25)....md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NodeJS"
+              "title": "JavaScript Basics (30-03-25)..."
             }
           },
           {
@@ -294,6 +294,7 @@
   },
   "active": "28ee4ea9a6dfa20d",
   "lastOpenFiles": [
+    "Backend(NodeJs)/NodeJS.md",
     "Backend(NodeJs)/MongoDB.md",
     "CSS/CSS.md",
     "HTML/SEO.md",
@@ -316,7 +317,6 @@
     "JavaScript/JavaScript Basics (30-03-25)....md",
     "JavaScript/ChatGPT Image Mar 31, 2025, 10_35_19 PM.png",
     "JavaScript",
-    "Backend(NodeJs)/NodeJS.md",
     "Backend(NodeJs)",
     "Git/Git (version control).md",
     "Git",
