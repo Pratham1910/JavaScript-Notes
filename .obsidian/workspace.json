@@ -179,7 +179,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Git & GitHub.md",
+                "file": "Git/Git & GitHub.md",
                 "mode": "source",
                 "source": false
               },
@@ -348,10 +348,10 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "0bfbff2b93445f88",
+  "active": "9baa4e5953e4f877",
   "lastOpenFiles": [
     "Important Sites.md",
-    "Git & GitHub.md",
+    "Git/Git & GitHub.md",
     "CSS/CSS.md",
     "SCSS.md",
     "HTML/Binary(AsciiCode).md",
