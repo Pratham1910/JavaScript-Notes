@@ -283,23 +283,15 @@ graph TD
 
   
 
-| Layer # | Name | Primary Purpose | Protocol Data Unit (PDU) | Core Protocols | Associated Devices |
-
-| :--- | :--- | :--- | :--- | :--- | :--- |
-
-| **7** | **Application** | Enables human-to-network software interactions. | Data / Message | HTTP, HTTPS, DNS, SSH, FTP, SMTP, DHCP | Gateway, NGFW, PC, Servers |
-
-| **6** | **Presentation** | Formats, encrypts, and compresses data. | Data | SSL, TLS, ASCII, JPEG, MPEG, GIF | PC, Gateway |
-
-| **5** | **Session** | Creates, manages, and tears down sessions. | Data | NetBIOS, RPC, PPTP, Sockets | PC, Servers |
-
-| **4** | **Transport** | Manages end-to-end transport, port assignments. | Segment (TCP) / Datagram (UDP) | TCP, UDP | Layer 4 Load Balancers |
-
-| **3** | **Network** | Resolves paths, handles IP addressing & routing. | Packet | IPv4, IPv6, ICMP, IPsec, ARP | Routers, Layer 3 Switches |
-
-| **2** | **Data Link** | Maps MAC addresses, handles frame error checks. | Frame | Ethernet (802.3), Wi-Fi (802.11), PPP | Layer 2 Switches, NICs, Bridges |
-
-| **1** | **Physical** | Transmits raw binary streams over physical media. | Bits | Electrical signals, Fiber pulses, radio frequencies | Cables (Cat6), Hubs, Repeaters |
+| Layer # | Name             | Primary Purpose                                   | Protocol Data Unit (PDU)       | Core Protocols                                      | Associated Devices              |
+| :------ | :--------------- | :------------------------------------------------ | :----------------------------- | :-------------------------------------------------- | :------------------------------ |
+| **7**   | **Application**  | Enables human-to-network software interactions.   | Data / Message                 | HTTP, HTTPS, DNS, SSH, FTP, SMTP, DHCP              | Gateway, NGFW, PC, Servers      |
+| **6**   | **Presentation** | Formats, encrypts, and compresses data.           | Data                           | SSL, TLS, ASCII, JPEG, MPEG, GIF                    | PC, Gateway                     |
+| **5**   | **Session**      | Creates, manages, and tears down sessions.        | Data                           | NetBIOS, RPC, PPTP, Sockets                         | PC, Servers                     |
+| **4**   | **Transport**    | Manages end-to-end transport, port assignments.   | Segment (TCP) / Datagram (UDP) | TCP, UDP                                            | Layer 4 Load Balancers          |
+| **3**   | **Network**      | Resolves paths, handles IP addressing & routing.  | Packet                         | IPv4, IPv6, ICMP, IPsec, ARP                        | Routers, Layer 3 Switches       |
+| **2**   | **Data Link**    | Maps MAC addresses, handles frame error checks.   | Frame                          | Ethernet (802.3), Wi-Fi (802.11), PPP               | Layer 2 Switches, NICs, Bridges |
+| **1**   | **Physical**     | Transmits raw binary streams over physical media. | Bits                           | Electrical signals, Fiber pulses, radio frequencies | Cables (Cat6), Hubs, Repeaters  |
 
   
 
@@ -485,21 +477,13 @@ An IP address provides a logical identifier for routers to transport data across
 
   
 
-| Class | First Octet Range | Default Subnet Mask | Purpose / Notes |
-
-| :--- | :--- | :--- | :--- |
-
-| **Class A** | `1.0.0.0` - `126.255.255.255` | `255.0.0.0` (/8) | Large scale networks. (Address `127.x.x.x` is reserved for Loopback). |
-
-| **Class B** | `128.0.0.0` - `191.255.255.255` | `255.255.0.0` (/16) | Mid-size networks. |
-
-| **Class C** | `192.0.0.0` - `223.255.255.255` | `255.255.255.0` (/24) | Small local networks. |
-
-| **Class D** | `224.0.0.0` - `239.255.255.255` | N/A | Reserved for Multicast. |
-
-| **Class E** | `240.0.0.0` - `255.255.255.255` | N/A | Reserved for research and testing. |
-
-  
+| Class       | First Octet Range               | Default Subnet Mask   | Purpose / Notes                                                       |
+| :---------- | :------------------------------ | :-------------------- | :-------------------------------------------------------------------- |
+| **Class A** | `1.0.0.0` - `126.255.255.255`   | `255.0.0.0` (/8)      | Large scale networks. (Address `127.x.x.x` is reserved for Loopback). |
+| **Class B** | `128.0.0.0` - `191.255.255.255` | `255.255.0.0` (/16)   | Mid-size networks.                                                    |
+| **Class C** | `192.0.0.0` - `223.255.255.255` | `255.255.255.0` (/24) | Small local networks.                                                 |
+| **Class D** | `224.0.0.0` - `239.255.255.255` | N/A                   | Reserved for Multicast.                                               |
+| **Class E** | `240.0.0.0` - `255.255.255.255` | N/A                   | Reserved for research and testing.                                    |
 
 #### RFC 1918 Private Ranges (Non-Routable on Public Internet)
 
@@ -583,21 +567,14 @@ For any given subnet mask of size `/N`:
 
   
 
-| CIDR Prefix | Subnet Mask | Total IPs | Usable IPs |
-
-| :--- | :--- | :--- | :--- |
-
-| **`/24`** | `255.255.255.0` | 256 | 254 |
-
-| **`/25`** | `255.255.255.128` | 128 | 126 |
-
-| **`/26`** | `255.255.255.192` | 64 | 62 |
-
-| **`/27`** | `255.255.255.224` | 32 | 30 |
-
-| **`/28`** | `255.255.255.240` | 16 | 14 |
-
-| **`/30`** | `255.255.255.252` | 4 | 2 |
+| CIDR Prefix | Subnet Mask       | Total IPs | Usable IPs |
+| :---------- | :---------------- | :-------- | :--------- |
+| **`/24`**   | `255.255.255.0`   | 256       | 254        |
+| **`/25`**   | `255.255.255.128` | 128       | 126        |
+| **`/26`**   | `255.255.255.192` | 64        | 62         |
+| **`/27`**   | `255.255.255.224` | 32        | 30         |
+| **`/28`**   | `255.255.255.240` | 16        | 14         |
+| **`/30`**   | `255.255.255.252` | 4         | 2          |
 
   
 
@@ -947,19 +924,13 @@ UDP is a lightweight, connectionless transport protocol operating at Layer 4 of 
 
   
 
-| Feature | TCP | UDP |
-
-| :--- | :--- | :--- |
-
-| **Connection State** | Connection-oriented (Handshake required) | Connectionless (No handshake) |
-
-| **Reliability** | Guaranteed delivery (Retransmits lost data) | Best-effort delivery (Packets can be lost) |
-
-| **Ordering** | Guarantees sequential packet delivery | No ordering guarantees |
-
-| **Speed** | Slower (due to transmission headers and ACKs) | Faster (minimal overhead) |
-
-| **Header Size** | 20 - 60 Bytes | 8 Bytes |
+| Feature              | TCP                                           | UDP                                        |
+| :------------------- | :-------------------------------------------- | :----------------------------------------- |
+| **Connection State** | Connection-oriented (Handshake required)      | Connectionless (No handshake)              |
+| **Reliability**      | Guaranteed delivery (Retransmits lost data)   | Best-effort delivery (Packets can be lost) |
+| **Ordering**         | Guarantees sequential packet delivery         | No ordering guarantees                     |
+| **Speed**            | Slower (due to transmission headers and ACKs) | Faster (minimal overhead)                  |
+| **Header Size**      | 20 - 60 Bytes                                 | 8 Bytes                                    |
 
   
 
@@ -975,25 +946,16 @@ The Transport layer uses ports to direct incoming traffic to the correct applica
 
   
 
-| Protocol Name | Abbreviation | Layer | Default Port | Primary Function |
-
-| :--- | :--- | :--- | :--- | :--- |
-
-| **File Transfer Protocol** | FTP | L4 TCP | `20 / 21` | Transfers files between client and server. |
-
-| **Secure Shell** | SSH | L4 TCP | `22` | Secures remote login access. |
-
-| **Telnet** | Telnet | L4 TCP | `23` | Unencrypted legacy remote terminal interface. |
-
-| **Simple Mail Transfer Protocol** | SMTP | L4 TCP | `25` | Sends mail messages across servers. |
-
-| **Domain Name System** | DNS | L4 TCP/UDP | `53` | Resolves domain name lookups. |
-
-| **Dynamic Host Configuration** | DHCP | L4 UDP | `67 / 68` | Dynamically leases host IPs. |
-
-| **Hypertext Transfer Protocol** | HTTP | L4 TCP | `80` | Serves unencrypted web pages. |
-
-| **Hypertext Transfer Secure** | HTTPS | L4 TCP | `443` | Serves encrypted, secure web traffic. |
+| Protocol Name                     | Abbreviation | Layer      | Default Port | Primary Function                              |
+| :-------------------------------- | :----------- | :--------- | :----------- | :-------------------------------------------- |
+| **File Transfer Protocol**        | FTP          | L4 TCP     | `20 / 21`    | Transfers files between client and server.    |
+| **Secure Shell**                  | SSH          | L4 TCP     | `22`         | Secures remote login access.                  |
+| **Telnet**                        | Telnet       | L4 TCP     | `23`         | Unencrypted legacy remote terminal interface. |
+| **Simple Mail Transfer Protocol** | SMTP         | L4 TCP     | `25`         | Sends mail messages across servers.           |
+| **Domain Name System**            | DNS          | L4 TCP/UDP | `53`         | Resolves domain name lookups.                 |
+| **Dynamic Host Configuration**    | DHCP         | L4 UDP     | `67 / 68`    | Dynamically leases host IPs.                  |
+| **Hypertext Transfer Protocol**   | HTTP         | L4 TCP     | `80`         | Serves unencrypted web pages.                 |
+| **Hypertext Transfer Secure**     | HTTPS        | L4 TCP     | `443`        | Serves encrypted, secure web traffic.         |
 
   
 
