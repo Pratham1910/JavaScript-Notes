@@ -4,7 +4,6 @@
 Welcome to the ultimate self-paced tutorial on computer networking. This guide starts at absolute-zero concepts and builds up to enterprise-level advanced administration, cloud/container architecture, and hands-on laboratory setups.
 
 Use this document as both a tutorial and a long-term reference. Each chapter features essential theoretical concepts followed by concrete command-line or software-based practical labs.
-
   
 ---
 
@@ -80,7 +79,7 @@ Use this document as both a tutorial and a long-term reference. Each chapter fea
 
   
 
-## 1. Networking Fundamentals
+## 1. Networking Fundamentals.
 
 ### Core Concepts
 

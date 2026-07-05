@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Networking.md",
+                "file": "Networking/Networking.md",
                 "mode": "source",
                 "source": false
               },
@@ -196,10 +196,11 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "89528910dce64bd6",
+  "active": "9baa4e5953e4f877",
   "lastOpenFiles": [
+    "Networkin",
     "React/React                                          31-03-2025.md",
-    "Networking.md",
+    "Networking/Networking.md",
     "Networking",
     "React/ChatGPT Image Mar 31, 2025, 10_35_19 PM.png",
     "Git/1. Git & GitHub.md",
@@ -233,7 +234,6 @@
     "DSA/16-BitManipulation.md",
     "DSA/15-Greedy.md",
     "DSA/14-DP.md",
-    "DSA/13-Graphs.md",
     "Untitled 1.base",
     "Untitled.base",
     "Pasted image 20260507220917.png",
