@@ -1,4 +1,5 @@
-# Complete DSA Roadmap
+
+>**Note:** Don't waste time worrying about which language to use for DSA. The concepts remain the same across languages. Master the fundamentals, solve problems consistently, and the language will never be a limitation.
 
 ## Phase 0 (3 Days): Programming Fundamentals
 
@@ -198,3 +199,6 @@ Multiplication 10. Burst Balloons
 ## Total Target
 
 Approximately 555 questions.
+Refer : https://www.youtube.com/watch?v=0bHoB32fuj0&list=PLgUwDviBIf0oF6QL8m22w1hIDC1vJ_BHz
+
+Refer : https://takeuforward.org/dsa/strivers-a2z-sheet-learn-dsa-a-to-z
