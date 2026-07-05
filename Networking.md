@@ -1,21 +1,15 @@
 
 # Networking from Absolute Beginner to Advanced: The Ultimate Practical Guide
 
-  
-
 Welcome to the ultimate self-paced tutorial on computer networking. This guide starts at absolute-zero concepts and builds up to enterprise-level advanced administration, cloud/container architecture, and hands-on laboratory setups.
-
-  
 
 Use this document as both a tutorial and a long-term reference. Each chapter features essential theoretical concepts followed by concrete command-line or software-based practical labs.
 
   
-
 ---
 
 ## Roadmap & Table of Contents
 
-  
 
 ```
 
@@ -24,7 +18,6 @@ Use this document as both a tutorial and a long-term reference. Each chapter fea
 ```
 
   
-
 1. [Networking Fundamentals](#1-networking-fundamentals)
 
 2. [Network Devices](#2-network-devices)
@@ -89,11 +82,7 @@ Use this document as both a tutorial and a long-term reference. Each chapter fea
 
 ## 1. Networking Fundamentals
 
-  
-
 ### Core Concepts
-
-  
 
 *   **What is a Network?** A collection of computers, servers, mainframes, network devices, peripherals, or other devices connected to one another to allow data sharing.
 
@@ -131,11 +120,7 @@ Use this document as both a tutorial and a long-term reference. Each chapter fea
 
     *   **Packet Loss**: The percentage of packets sent that fail to reach their destination, usually caused by network congestion or hardware failures.
 
-  
-
 ### Practical Labs
-
-  
 
 #### A. Find Your Local IP Address
 
@@ -147,7 +132,6 @@ Open your command-line interface (CLI) and run the appropriate command:
 
 *   **macOS**: `ifconfig`
 
-  
 
 #### B. Check Network Connectivity
 
@@ -158,8 +142,6 @@ Test connection to a remote server using ICMP echo requests:
 ping google.com
 
 ```
-
-  
 
 #### C. Trace the Route to a Destination
 
@@ -229,8 +211,6 @@ A typical home/office setup forwards data in a structured path:
 
 ```
 
-  
-
 #### B. Exercise: Network Topology Mapping
 
 Draw your local home network architecture. Locate:
@@ -293,13 +273,10 @@ graph TD
 | **2**   | **Data Link**    | Maps MAC addresses, handles frame error checks.   | Frame                          | Ethernet (802.3), Wi-Fi (802.11), PPP               | Layer 2 Switches, NICs, Bridges |
 | **1**   | **Physical**     | Transmits raw binary streams over physical media. | Bits                           | Electrical signals, Fiber pulses, radio frequencies | Cables (Cat6), Hubs, Repeaters  |
 
-  
-
 ### Practical Data Walkthrough
 
 When you type `https://google.com` into your browser, your data is encapsulated down the stack:
 
-  
 
 ```
 
@@ -319,11 +296,8 @@ When you type `https://google.com` into your browser, your data is encapsulated 
 
 ```
 
-  
 
 ---
-
-  
 
 ## 4. The TCP/IP Model
 
@@ -377,8 +351,6 @@ graph LR
 
 ```
 
-  
-
 ### Layer Comparison & Key Differences
 
 *   **Application Layer**: Maps to OSI Layers 5, 6, and 7. Combines user interface, translation, and session management.
@@ -393,15 +365,9 @@ graph LR
 
 ---
 
-  
-
 ## 5. MAC Addressing
 
-  
-
 ### Core Concepts
-
-  
 
 *   **MAC Address (Media Access Control)**: A globally unique 48-bit physical address burned into a Network Interface Card (NIC) during manufacturing. It is written as 12 hexadecimal characters separated by colons or hyphens (e.g., `00:1A:2B:3C:4D:5E`).
 
@@ -457,25 +423,17 @@ graph LR
 
 ## 6. IP Addressing (IPv4 & IPv6)
 
-  
 
 ### Core Concepts
 
-  
 
 An IP address provides a logical identifier for routers to transport data across different networks.
-
-  
 
 *   **IPv4 Addresses**: 32-bit addresses formatted as four 8-bit octets separated by decimals (e.g., `192.168.1.100`).
 
 *   **IPv6 Addresses**: 128-bit addresses written in hexadecimal notation and grouped by colons (e.g., `2001:0db8:85a3:0000:0000:8a2e:0370:7334`). Consecutive groups of zeros can be abbreviated as `::` (e.g., `2001:db8::8a2e:370:7334`).
 
-  
-
 #### IPv4 Classful Schemes
-
-  
 
 | Class       | First Octet Range               | Default Subnet Mask   | Purpose / Notes                                                       |
 | :---------- | :------------------------------ | :-------------------- | :-------------------------------------------------------------------- |
@@ -576,8 +534,6 @@ For any given subnet mask of size `/N`:
 | **`/28`**   | `255.255.255.240` | 16        | 14         |
 | **`/30`**   | `255.255.255.252` | 4         | 2          |
 
-  
-
 ### Practical Exercises (Test Your Subnetting Knowledge)
 
 Find the Network Address, Broadcast Address, and Usable IP range for the following hosts:
@@ -609,8 +565,6 @@ Find the Network Address, Broadcast Address, and Usable IP range for the followi
   
 
 ## 8. ARP (Address Resolution Protocol)
-
-  
 
 ### Core Concepts
 
@@ -898,11 +852,7 @@ TCP is a reliable, connection-oriented transport protocol operating at Layer 4 o
 
 ## 13. UDP (User Datagram Protocol)
 
-  
-
-### Core Concepts
-
-  
+### Core Concepts  
 
 UDP is a lightweight, connectionless transport protocol operating at Layer 4 of the OSI model.
 
@@ -918,11 +868,7 @@ UDP is a lightweight, connectionless transport protocol operating at Layer 4 of 
 
 *   **Common Use Cases**: DNS queries, DHCP exchanges, NTP synchronization, live video streaming, voice calls (VoIP), and online gaming.
 
-  
-
 ### TCP vs. UDP Comparison
-
-  
 
 | Feature              | TCP                                           | UDP                                        |
 | :------------------- | :-------------------------------------------- | :----------------------------------------- |
